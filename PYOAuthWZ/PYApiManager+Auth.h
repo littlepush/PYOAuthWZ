@@ -1,5 +1,5 @@
 //
-//  PYOAuthWZ.h
+//  PYApiManager+Auth.h
 //  PYOAuthWZ
 //
 //  Created by Push Chen on 9/29/15.
@@ -40,23 +40,41 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import <Foundation/Foundation.h>
-#import "PYDataManager+Token.h"
-#import "PYApiManager+Auth.h"
-#import "PYDataManager+Auth.h"
-#import "PYReachabilityManager.h"
+#import "PYApiManager.h"
+#import "PYCore.h"
 
-@interface PYOAuthWZ : NSObject
+PY_CUSTOMIZED_API
+(
+ RegisterClientDevice,
+ PYApiPostRequest, PYApiJSONResponse,
+ @property (nonatomic, copy) NSString *client_id;
+ @property (nonatomic, copy) NSString *client_secret;
+ )
 
-/*!
- @brief: the start point of creating a LDS Client, anything should be done
- inside the callback block.
- The method will monitor the network status and try to refresh the token.
- If the network is done, it will wait and retry till the network is back to work.
- */
-+ (void)InitializeClient:(PYActionDone)done;
+PY_CUSTOMIZED_API
+(
+ AuthClient,
+ PYApiPostRequest, PYApiJSONResponse,
+ @property (nonatomic, copy) NSString *access_token;
+ @property (nonatomic, copy) NSString *token_type;
+ )
 
-@end
+PY_CUSTOMIZED_API
+(
+ RefreshToken,
+ PYApiPostRequest, PYApiJSONResponse,
+ @property (nonatomic, copy) NSString *refresh_token;
+ @property (nonatomic, copy) NSString *access_token;
+ @property (nonatomic, strong) PYDate *expires_in;
+ @property (nonatomic, copy) NSString *token_type;
+ )
+
+PY_CUSTOMIZED_API
+(
+ UpdateClientInfo,
+ PYApiPostRequest, PYApiJSONResponse
+ )
+
 
 // @littlepush
 // littlepush@gmail.com

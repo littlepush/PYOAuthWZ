@@ -1,5 +1,5 @@
 //
-//  PYOAuthWZ.h
+//  PYReachabilityManager.h
 //  PYOAuthWZ
 //
 //  Created by Push Chen on 9/29/15.
@@ -40,21 +40,17 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import <Foundation/Foundation.h>
-#import "PYDataManager+Token.h"
-#import "PYApiManager+Auth.h"
-#import "PYDataManager+Auth.h"
-#import "PYReachabilityManager.h"
+#import "PYActionDispatcher.h"
+#import "PYReachability.h"
+#import "PYService.h"
 
-@interface PYOAuthWZ : NSObject
+#define kPYNetworkUnreachable       0x0001
+#define kPYNetworkOnline            0x0002
 
-/*!
- @brief: the start point of creating a LDS Client, anything should be done
- inside the callback block.
- The method will monitor the network status and try to refresh the token.
- If the network is done, it will wait and retry till the network is back to work.
- */
-+ (void)InitializeClient:(PYActionDone)done;
+// Monitor current network status.
+@interface PYReachabilityManager : PYActionDispatcher <PYService>
+
+@property (nonatomic, readonly) PYNetworkStatus     currentNetworkStatus;
 
 @end
 

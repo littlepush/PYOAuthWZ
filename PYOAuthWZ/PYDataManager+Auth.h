@@ -1,5 +1,5 @@
 //
-//  PYOAuthWZ.h
+//  PYDataManager+Auth.h
 //  PYOAuthWZ
 //
 //  Created by Push Chen on 9/29/15.
@@ -40,21 +40,38 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import <Foundation/Foundation.h>
-#import "PYDataManager+Token.h"
-#import "PYApiManager+Auth.h"
-#import "PYDataManager+Auth.h"
-#import "PYReachabilityManager.h"
-
-@interface PYOAuthWZ : NSObject
+#import "PYDataManager.h"
 
 /*!
- @brief: the start point of creating a LDS Client, anything should be done
- inside the callback block.
- The method will monitor the network status and try to refresh the token.
- If the network is done, it will wait and retry till the network is back to work.
+ @brief On any action failed, will send this notification
  */
-+ (void)InitializeClient:(PYActionDone)done;
+extern NSString * kPYActionFailedNotification;
+
+/*!
+ @brief The initialize status flag.
+ If the network is broken duration launching, this flag will be
+ set to @"broken", and when network resume, the server should
+ try to re-auth the client.
+ The status flag is stored in kernel cache
+ */
+extern NSString *kPYInitializeStatusFlag;
+
+@interface PYDataManager (Auth)
+
+/*!
+ @brief The global initialization method.
+ */
+- (void)PYInitializeClient:(PYActionDone)done;
+
+/*!
+ @brief Logout
+ */
+- (void)PYLogoutAndRefreshToken:(PYActionDone)done;
+
+/*!
+ @brief The error handler
+ */
+- (void)PYErrorHandler:(NSError *)error shouldRedoAction:(PYActionDone)done;
 
 @end
 
