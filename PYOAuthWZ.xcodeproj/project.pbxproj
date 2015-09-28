@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7158818DC75F15147E1B01 /* libPods-PYOAuthWZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */; };
 		E644C48B1BB9B9F2002881AB /* PYOAuthWZ.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E644C48A1BB9B9F2002881AB /* PYOAuthWZ.h */; };
 		E644C48D1BB9B9F2002881AB /* PYOAuthWZ.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C48C1BB9B9F2002881AB /* PYOAuthWZ.m */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYOAuthWZ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.debug.xcconfig"; sourceTree = "<group>"; };
+		96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.release.xcconfig"; sourceTree = "<group>"; };
 		E644C4871BB9B9F2002881AB /* libPYOAuthWZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPYOAuthWZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644C48A1BB9B9F2002881AB /* PYOAuthWZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYOAuthWZ.h; sourceTree = "<group>"; };
 		E644C48C1BB9B9F2002881AB /* PYOAuthWZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYOAuthWZ.m; sourceTree = "<group>"; };
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7158818DC75F15147E1B01 /* libPods-PYOAuthWZ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5333B7B64AEA1948C18CE229 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E644C47E1BB9B9F2002881AB = {
 			isa = PBXGroup;
 			children = (
 				E644C4891BB9B9F2002881AB /* PYOAuthWZ */,
 				E644C4881BB9B9F2002881AB /* Products */,
+				F5E1603D3B34CD9BA8D08178 /* Pods */,
+				5333B7B64AEA1948C18CE229 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +81,15 @@
 			path = PYOAuthWZ;
 			sourceTree = "<group>";
 		};
+		F5E1603D3B34CD9BA8D08178 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */,
+				96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E644C4901BB9B9F2002881AB /* Build configuration list for PBXNativeTarget "PYOAuthWZ" */;
 			buildPhases = (
+				7CAE2FA48D7FD93D88BF87DA /* Check Pods Manifest.lock */,
 				E644C4831BB9B9F2002881AB /* Sources */,
 				E644C4841BB9B9F2002881AB /* Frameworks */,
 				E644C4851BB9B9F2002881AB /* CopyFiles */,
+				6494B951B0F6AF9B84ECA404 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,6 +142,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6494B951B0F6AF9B84ECA404 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CAE2FA48D7FD93D88BF87DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E644C4831BB9B9F2002881AB /* Sources */ = {
@@ -209,6 +268,7 @@
 		};
 		E644C4911BB9B9F2002881AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -218,6 +278,7 @@
 		};
 		E644C4921BB9B9F2002881AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -244,6 +305,7 @@
 				E644C4921BB9B9F2002881AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
