@@ -1,8 +1,8 @@
 //
-//  PYOAuthWZ.h
+//  NSData+AES.h
 //  PYOAuthWZ
 //
-//  Created by Push Chen on 9/29/15.
+//  Created by Push Chen on 10/12/15.
 //  Copyright © 2015 PushLab. All rights reserved.
 //
 
@@ -41,22 +41,16 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "PYDataManager+Token.h"
-#import "PYApiManager+Auth.h"
-#import "PYDataManager+Auth.h"
-#import "PYReachabilityManager.h"
-#import "PYApiRequest+Auth.h"
-#import "NSData+AES.h"
 
-@interface PYOAuthWZ : NSObject
+@interface NSData (AES)
 
-/*!
- @brief: the start point of creating a LDS Client, anything should be done
- inside the callback block.
- The method will monitor the network status and try to refresh the token.
- If the network is done, it will wait and retry till the network is back to work.
- */
-+ (void)InitializeClient:(PYActionDone)done;
+- (NSData *)aes128ecbDecryptedWithKey:(NSString *)key;
+
+@end
+
+@interface NSString (AES)
+
+- (NSString *)aes128ecbDecryptedWithKey:(NSString *)key;
 
 @end
 

@@ -1,8 +1,8 @@
 //
-//  PYOAuthWZ.h
+//  PYDataManager+ApiVersion.h
 //  PYOAuthWZ
 //
-//  Created by Push Chen on 9/29/15.
+//  Created by Push Chen on 10/12/15.
 //  Copyright © 2015 PushLab. All rights reserved.
 //
 
@@ -40,23 +40,29 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import <Foundation/Foundation.h>
-#import "PYDataManager+Token.h"
-#import "PYApiManager+Auth.h"
-#import "PYDataManager+Auth.h"
-#import "PYReachabilityManager.h"
-#import "PYApiRequest+Auth.h"
-#import "NSData+AES.h"
+#import "PYNetwork.h"
 
-@interface PYOAuthWZ : NSObject
+@interface PYApiManager (ApiVersion)
 
 /*!
- @brief: the start point of creating a LDS Client, anything should be done
- inside the callback block.
- The method will monitor the network status and try to refresh the token.
- If the network is done, it will wait and retry till the network is back to work.
+ @brief Set the API Version of the App
  */
-+ (void)InitializeClient:(PYActionDone)done;
++ (void)setApiVersion:(NSString *)appVersion;
+
+/*!
+ @brief Set the api version key in the url schema, default is <apiversion>
+ */
++ (void)setApiVersionKey:(NSString *)apiKey;
+
+/*!
+ @brief Get the API Version
+ */
++ (NSString *)apiVersion;
+
+/*!
+ @brief The key of api version in URL schema
+ */
++ (NSString *)apiVersionKey;
 
 @end
 

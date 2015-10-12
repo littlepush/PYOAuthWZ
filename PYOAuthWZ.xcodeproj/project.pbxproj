@@ -14,6 +14,9 @@
 		E644C4981BB9C911002881AB /* PYApiManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C4971BB9C911002881AB /* PYApiManager+Auth.m */; settings = {ASSET_TAGS = (); }; };
 		E644C49B1BB9CA9C002881AB /* PYDataManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */; settings = {ASSET_TAGS = (); }; };
 		E644C49E1BB9CC3B002881AB /* PYReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
+		E6D645D11BCBBB6100FF45F4 /* PYApiRequest+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */; settings = {ASSET_TAGS = (); }; };
+		E6D645D41BCBBE3C00FF45F4 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */; settings = {ASSET_TAGS = (); }; };
+		E6D645D71BCBBED800FF45F4 /* PYApiManager+ApiVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +47,12 @@
 		E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYDataManager+Auth.m"; sourceTree = "<group>"; };
 		E644C49C1BB9CC3B002881AB /* PYReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYReachabilityManager.h; sourceTree = "<group>"; };
 		E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYReachabilityManager.m; sourceTree = "<group>"; };
+		E6D645CF1BCBBB6100FF45F4 /* PYApiRequest+Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYApiRequest+Auth.h"; sourceTree = "<group>"; };
+		E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYApiRequest+Auth.m"; sourceTree = "<group>"; };
+		E6D645D21BCBBE3C00FF45F4 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		E6D645D51BCBBED800FF45F4 /* PYApiManager+ApiVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYApiManager+ApiVersion.h"; sourceTree = "<group>"; };
+		E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYApiManager+ApiVersion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +100,18 @@
 				E644C48C1BB9B9F2002881AB /* PYOAuthWZ.m */,
 				E644C4931BB9BD74002881AB /* PYDataManager+Token.h */,
 				E644C4941BB9BD74002881AB /* PYDataManager+Token.m */,
+				E6D645D51BCBBED800FF45F4 /* PYApiManager+ApiVersion.h */,
+				E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */,
 				E644C4961BB9C911002881AB /* PYApiManager+Auth.h */,
 				E644C4971BB9C911002881AB /* PYApiManager+Auth.m */,
 				E644C4991BB9CA9C002881AB /* PYDataManager+Auth.h */,
 				E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */,
 				E644C49C1BB9CC3B002881AB /* PYReachabilityManager.h */,
 				E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */,
+				E6D645CF1BCBBB6100FF45F4 /* PYApiRequest+Auth.h */,
+				E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */,
+				E6D645D21BCBBE3C00FF45F4 /* NSData+AES.h */,
+				E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */,
 			);
 			path = PYOAuthWZ;
 			sourceTree = "<group>";
@@ -201,10 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D645D41BCBBE3C00FF45F4 /* NSData+AES.m in Sources */,
 				E644C4951BB9BD74002881AB /* PYDataManager+Token.m in Sources */,
+				E6D645D11BCBBB6100FF45F4 /* PYApiRequest+Auth.m in Sources */,
 				E644C49E1BB9CC3B002881AB /* PYReachabilityManager.m in Sources */,
 				E644C4981BB9C911002881AB /* PYApiManager+Auth.m in Sources */,
 				E644C49B1BB9CA9C002881AB /* PYDataManager+Auth.m in Sources */,
+				E6D645D71BCBBED800FF45F4 /* PYApiManager+ApiVersion.m in Sources */,
 				E644C48D1BB9B9F2002881AB /* PYOAuthWZ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
