@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "PYOAuthWZ"
-  s.version      = "0.4"
+  s.version      = "0.5"
   s.summary      = "OAuth Pod for @Zieglar NodeJs Framework"
 
   s.description  = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/littlepush/PYOAuthWZ.git", :tag => "0.4" }
+  s.source       = { :git => "https://github.com/littlepush/PYOAuthWZ.git", :tag => "0.5" }
   s.dependency "PYCore"
   s.dependency "PYData"
   s.dependency "PYNetwork"
