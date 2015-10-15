@@ -51,7 +51,7 @@ PY_SET_URLSCHEMA([PYDataManager shared].apiPathForRegisterClient)
     NSMutableURLRequest *_req = [super generateRequest];
     if ( _req == nil ) return nil;
     
-    //[self beginOfSettingPostData:_req];
+    [self beginOfSettingPostData:_req];
     
     NSDictionary *_params = [[PYDataManager shared] parametersForAPI:PYOAuthAPIRegisterClient];
     for ( NSString *_key in _params ) {
@@ -59,7 +59,7 @@ PY_SET_URLSCHEMA([PYDataManager shared].apiPathForRegisterClient)
         [self addPostValue:_value forKey:_key];
     }
     
-    //[self endOfSettingPostData:_req];
+    [self endOfSettingPostData:_req];
     
     [_req setHTTPMethod:[[PYDataManager shared] httpMethodForAPI:PYOAuthAPIRegisterClient]];
     return _req;

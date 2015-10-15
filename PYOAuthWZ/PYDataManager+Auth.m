@@ -196,9 +196,24 @@ static BOOL _errorHandlerIsRefreshingToken = NO;
              // Update initialize status flag
              if ( [PYReachability reachabilityForInternetConnection].reachableStatus == PYNetworkStatusNotReachable ) {
                  [[PYKernel currentKernel] updateKernelObject:@"broken" forKey:kPYInitializeStatusFlag];
+             } else {
+                 NSTimer *_reTimer = [NSTimer
+                                      timerWithTimeInterval:10.f
+                                      target:[PYDataManager shared]
+                                      selector:@selector(_pyTimerToReInitializeClient:)
+                                      userInfo:@{@"done": done}
+                                      repeats:NO];
+                 [[NSRunLoop currentRunLoop] addTimer:_reTimer forMode:NSRunLoopCommonModes];
              }
          }];
     }
+}
+
+- (void)_pyTimerToReInitializeClient:(NSTimer *)timer
+{
+    NSDictionary *_ui = timer.userInfo;
+    PYActionDone _done = [_ui objectForKey:@"done"];
+    [self PYInitializeClient:_done];
 }
 
 - (void)PYLogoutAndRefreshToken:(PYActionDone)done
