@@ -44,13 +44,33 @@
 
 @interface NSData (AES)
 
+/*!
+ The key should be md5
+ */
 - (NSData *)aes128ecbDecryptedWithKey:(NSString *)key;
+- (NSData *)aes128ecbEncryptedWithKey:(NSString *)key;
+
+/*!
+ We will md5 this key automatically
+ */
+- (NSData *)aes128ecbDecryptedWithPlainKey:(NSString *)key;
+- (NSData *)aes128ecbEncryptedWithPlainKey:(NSString *)key;
 
 @end
 
 @interface NSString (AES)
 
+/*!
+ The key should be md5
+ */
 - (NSString *)aes128ecbDecryptedWithKey:(NSString *)key;
+- (NSString *)aes128ecbEncryptedWithKey:(NSString *)key;
+
+/*!
+ We will md5 this key automatically
+ */
+- (NSString *)aes128ecbDecryptedWithPlainKey:(NSString *)key;
+- (NSString *)aes128ecbEncryptedWithPlainKey:(NSString *)key;
 
 @end
 

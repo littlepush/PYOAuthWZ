@@ -58,6 +58,16 @@ NSData *_hexStringToData(NSString *hexString)
     return _data;
 }
 
+NSString *_dataToHexString(NSData *data) {
+    NSMutableString *_hexString = [NSMutableString string];
+    const char *_dataBuffer = [data bytes];
+    for ( NSUInteger i = 0; i < data.length; ++i ) {
+        unsigned char _b = _dataBuffer[i];
+        [_hexString appendFormat:@"%02X", _b];
+    }
+    return _hexString;
+}
+
 @implementation NSData (AES)
 
 - (NSData *)aes128ecbDecryptedWithKey:(NSString *)key
@@ -88,6 +98,44 @@ NSData *_hexStringToData(NSString *hexString)
     return nil;
 }
 
+- (NSData *)aes128ecbEncryptedWithKey:(NSString *)key
+{
+    NSData *_keyData = _hexStringToData(key);
+    
+    NSUInteger dataLength = [self length];
+    size_t bufferSize = dataLength * 4;
+    void *buffer = malloc(bufferSize);
+    
+    size_t numBytesEncrypted = 0;
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding | kCCOptionECBMode,
+                                          _keyData.bytes,
+                                          _keyData.length,
+                                          NULL,
+                                          [self bytes],
+                                          [self length],
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesEncrypted);
+    
+    if (cryptStatus == kCCSuccess) {
+        return [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+    }
+    free(buffer);
+    return nil;
+}
+
+- (NSData *)aes128ecbDecryptedWithPlainKey:(NSString *)key
+{
+    return [self aes128ecbDecryptedWithKey:[key md5sum]];
+}
+
+- (NSData *)aes128ecbEncryptedWithPlainKey:(NSString *)key
+{
+    return [self aes128ecbEncryptedWithKey:[key md5sum]];
+}
+
 @end
 
 @implementation NSString (AES)
@@ -96,8 +144,24 @@ NSData *_hexStringToData(NSString *hexString)
 {
     NSData* _encryptedData = _hexStringToData(self);
     NSData *_result = [_encryptedData aes128ecbDecryptedWithKey:key];
-    DUMPObj(_result);
     return [[NSString alloc] initWithData:_result encoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)aes128ecbEncryptedWithKey:(NSString *)key
+{
+    NSData *_originData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *_result = [_originData aes128ecbEncryptedWithKey:key];
+    return _dataToHexString(_result);
+}
+
+- (NSString *)aes128ecbDecryptedWithPlainKey:(NSString *)key
+{
+    return [self aes128ecbDecryptedWithKey:[key md5sum]];
+}
+
+- (NSString *)aes128ecbEncryptedWithPlainKey:(NSString *)key
+{
+    return [self aes128ecbEncryptedWithKey:[key md5sum]];
 }
 
 @end
