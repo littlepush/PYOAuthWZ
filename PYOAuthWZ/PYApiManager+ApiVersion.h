@@ -40,7 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYNetwork.h"
+#import <PYNetwork/PYNetwork.h>
 
 @interface PYApiManager (ApiVersion)
 

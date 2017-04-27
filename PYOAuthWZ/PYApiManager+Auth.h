@@ -40,8 +40,8 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYApiManager.h"
-#import "PYCore.h"
+#import <PYNetwork/PYNetwork.h>
+#import <PYCore/PYCore.h>
 
 PY_CUSTOMIZED_API
 (

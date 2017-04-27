@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C7158818DC75F15147E1B01 /* libPods-PYOAuthWZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */; };
+		3D2124E652D577C5819F2EAE /* libPods-PYOAuthWZTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D42D1017DBDDA04784FD2A /* libPods-PYOAuthWZTest.a */; };
+		6317A9114DF3F2CF060D2CE1 /* libPods-PYOAuthWZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BA4CEEE77C1CAABC077A43 /* libPods-PYOAuthWZ.a */; };
 		E644C48B1BB9B9F2002881AB /* PYOAuthWZ.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E644C48A1BB9B9F2002881AB /* PYOAuthWZ.h */; };
 		E644C48D1BB9B9F2002881AB /* PYOAuthWZ.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C48C1BB9B9F2002881AB /* PYOAuthWZ.m */; };
-		E644C4951BB9BD74002881AB /* PYDataManager+Token.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C4941BB9BD74002881AB /* PYDataManager+Token.m */; settings = {ASSET_TAGS = (); }; };
-		E644C4981BB9C911002881AB /* PYApiManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C4971BB9C911002881AB /* PYApiManager+Auth.m */; settings = {ASSET_TAGS = (); }; };
-		E644C49B1BB9CA9C002881AB /* PYDataManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */; settings = {ASSET_TAGS = (); }; };
-		E644C49E1BB9CC3B002881AB /* PYReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
-		E6D645D11BCBBB6100FF45F4 /* PYApiRequest+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */; settings = {ASSET_TAGS = (); }; };
-		E6D645D41BCBBE3C00FF45F4 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */; settings = {ASSET_TAGS = (); }; };
-		E6D645D71BCBBED800FF45F4 /* PYApiManager+ApiVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */; settings = {ASSET_TAGS = (); }; };
+		E644C4951BB9BD74002881AB /* PYDataManager+Token.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C4941BB9BD74002881AB /* PYDataManager+Token.m */; };
+		E644C4981BB9C911002881AB /* PYApiManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C4971BB9C911002881AB /* PYApiManager+Auth.m */; };
+		E644C49B1BB9CA9C002881AB /* PYDataManager+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */; };
+		E644C49E1BB9CC3B002881AB /* PYReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */; };
+		E66A09AC1EB217160065E286 /* PYOAuthWZTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E66A09AB1EB217160065E286 /* PYOAuthWZTest.m */; };
+		E66A09AE1EB217160065E286 /* libPYOAuthWZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E644C4871BB9B9F2002881AB /* libPYOAuthWZ.a */; };
+		E6D645D11BCBBB6100FF45F4 /* PYApiRequest+Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */; };
+		E6D645D41BCBBE3C00FF45F4 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */; };
+		E6D645D71BCBBED800FF45F4 /* PYApiManager+ApiVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E66A09AF1EB217160065E286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E644C47F1BB9B9F2002881AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E644C4861BB9B9F2002881AB;
+			remoteInfo = PYOAuthWZ;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E644C4851BB9B9F2002881AB /* CopyFiles */ = {
@@ -33,9 +46,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYOAuthWZ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.debug.xcconfig"; sourceTree = "<group>"; };
-		96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.release.xcconfig"; sourceTree = "<group>"; };
+		20BA4CEEE77C1CAABC077A43 /* libPods-PYOAuthWZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYOAuthWZ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		545345F0C8A370F032D54232 /* Pods-PYOAuthWZTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZTest/Pods-PYOAuthWZTest.release.xcconfig"; sourceTree = "<group>"; };
+		84D42D1017DBDDA04784FD2A /* libPods-PYOAuthWZTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PYOAuthWZTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FA0E64BFAA6F52CC472712 /* Pods-PYOAuthWZTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZTest/Pods-PYOAuthWZTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E644C4871BB9B9F2002881AB /* libPYOAuthWZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPYOAuthWZ.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644C48A1BB9B9F2002881AB /* PYOAuthWZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYOAuthWZ.h; sourceTree = "<group>"; };
 		E644C48C1BB9B9F2002881AB /* PYOAuthWZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYOAuthWZ.m; sourceTree = "<group>"; };
@@ -47,12 +61,17 @@
 		E644C49A1BB9CA9C002881AB /* PYDataManager+Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYDataManager+Auth.m"; sourceTree = "<group>"; };
 		E644C49C1BB9CC3B002881AB /* PYReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYReachabilityManager.h; sourceTree = "<group>"; };
 		E644C49D1BB9CC3B002881AB /* PYReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYReachabilityManager.m; sourceTree = "<group>"; };
+		E66A09A91EB217160065E286 /* PYOAuthWZTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYOAuthWZTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66A09AB1EB217160065E286 /* PYOAuthWZTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYOAuthWZTest.m; sourceTree = "<group>"; };
+		E66A09AD1EB217160065E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D645CF1BCBBB6100FF45F4 /* PYApiRequest+Auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYApiRequest+Auth.h"; sourceTree = "<group>"; };
 		E6D645D01BCBBB6100FF45F4 /* PYApiRequest+Auth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYApiRequest+Auth.m"; sourceTree = "<group>"; };
 		E6D645D21BCBBE3C00FF45F4 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
 		E6D645D31BCBBE3C00FF45F4 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		E6D645D51BCBBED800FF45F4 /* PYApiManager+ApiVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PYApiManager+ApiVersion.h"; sourceTree = "<group>"; };
 		E6D645D61BCBBED800FF45F4 /* PYApiManager+ApiVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PYApiManager+ApiVersion.m"; sourceTree = "<group>"; };
+		E7DA1AAF6540D538E35E81FF /* Pods-PYOAuthWZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.release.xcconfig"; sourceTree = "<group>"; };
+		EBD01B4ACCBF69E1A62858AF /* Pods-PYOAuthWZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYOAuthWZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +79,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7158818DC75F15147E1B01 /* libPods-PYOAuthWZ.a in Frameworks */,
+				6317A9114DF3F2CF060D2CE1 /* libPods-PYOAuthWZ.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66A09A61EB217160065E286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A09AE1EB217160065E286 /* libPYOAuthWZ.a in Frameworks */,
+				3D2124E652D577C5819F2EAE /* libPods-PYOAuthWZTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5333B7B64AEA1948C18CE229 /* Frameworks */ = {
+		690B11B66ECCA07D1DB491EC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				193FA7EFE1D13675C6FC1A74 /* libPods-PYOAuthWZ.a */,
+				EBD01B4ACCBF69E1A62858AF /* Pods-PYOAuthWZ.debug.xcconfig */,
+				E7DA1AAF6540D538E35E81FF /* Pods-PYOAuthWZ.release.xcconfig */,
+				E2FA0E64BFAA6F52CC472712 /* Pods-PYOAuthWZTest.debug.xcconfig */,
+				545345F0C8A370F032D54232 /* Pods-PYOAuthWZTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D2251DD3C20D4F55079934E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20BA4CEEE77C1CAABC077A43 /* libPods-PYOAuthWZ.a */,
+				84D42D1017DBDDA04784FD2A /* libPods-PYOAuthWZTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,9 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				E644C4891BB9B9F2002881AB /* PYOAuthWZ */,
+				E66A09AA1EB217160065E286 /* PYOAuthWZTest */,
 				E644C4881BB9B9F2002881AB /* Products */,
-				F5E1603D3B34CD9BA8D08178 /* Pods */,
-				5333B7B64AEA1948C18CE229 /* Frameworks */,
+				690B11B66ECCA07D1DB491EC /* Pods */,
+				6D2251DD3C20D4F55079934E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E644C4871BB9B9F2002881AB /* libPYOAuthWZ.a */,
+				E66A09A91EB217160065E286 /* PYOAuthWZTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,13 +158,13 @@
 			path = PYOAuthWZ;
 			sourceTree = "<group>";
 		};
-		F5E1603D3B34CD9BA8D08178 /* Pods */ = {
+		E66A09AA1EB217160065E286 /* PYOAuthWZTest */ = {
 			isa = PBXGroup;
 			children = (
-				51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */,
-				96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */,
+				E66A09AB1EB217160065E286 /* PYOAuthWZTest.m */,
+				E66A09AD1EB217160065E286 /* Info.plist */,
 			);
-			name = Pods;
+			path = PYOAuthWZTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,11 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E644C4901BB9B9F2002881AB /* Build configuration list for PBXNativeTarget "PYOAuthWZ" */;
 			buildPhases = (
-				7CAE2FA48D7FD93D88BF87DA /* Check Pods Manifest.lock */,
+				65FB6DF5752391067F963520 /* [CP] Check Pods Manifest.lock */,
 				E644C4831BB9B9F2002881AB /* Sources */,
 				E644C4841BB9B9F2002881AB /* Frameworks */,
 				E644C4851BB9B9F2002881AB /* CopyFiles */,
-				6494B951B0F6AF9B84ECA404 /* Copy Pods Resources */,
+				E2F3DB9E049E05FD0FAD5593 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,17 +189,43 @@
 			productReference = E644C4871BB9B9F2002881AB /* libPYOAuthWZ.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		E66A09A81EB217160065E286 /* PYOAuthWZTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66A09B11EB217160065E286 /* Build configuration list for PBXNativeTarget "PYOAuthWZTest" */;
+			buildPhases = (
+				A1983643D6FA59A10FAF650D /* [CP] Check Pods Manifest.lock */,
+				E66A09A51EB217160065E286 /* Sources */,
+				E66A09A61EB217160065E286 /* Frameworks */,
+				E66A09A71EB217160065E286 /* Resources */,
+				2CB23DC9BB372EB6B830DF64 /* [CP] Embed Pods Frameworks */,
+				F00ADD267B6365F14616F5D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E66A09B01EB217160065E286 /* PBXTargetDependency */,
+			);
+			name = PYOAuthWZTest;
+			productName = PYOAuthWZTest;
+			productReference = E66A09A91EB217160065E286 /* PYOAuthWZTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E644C47F1BB9B9F2002881AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = PushLab;
 				TargetAttributes = {
 					E644C4861BB9B9F2002881AB = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					E66A09A81EB217160065E286 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = VT7263HWQT;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -174,19 +242,75 @@
 			projectRoot = "";
 			targets = (
 				E644C4861BB9B9F2002881AB /* PYOAuthWZ */,
+				E66A09A81EB217160065E286 /* PYOAuthWZTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E66A09A71EB217160065E286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
-		6494B951B0F6AF9B84ECA404 /* Copy Pods Resources */ = {
+		2CB23DC9BB372EB6B830DF64 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PYOAuthWZTest/Pods-PYOAuthWZTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65FB6DF5752391067F963520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1983643D6FA59A10FAF650D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F3DB9E049E05FD0FAD5593 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,19 +318,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PYOAuthWZ/Pods-PYOAuthWZ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CAE2FA48D7FD93D88BF87DA /* Check Pods Manifest.lock */ = {
+		F00ADD267B6365F14616F5D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PYOAuthWZTest/Pods-PYOAuthWZTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -227,7 +351,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66A09A51EB217160065E286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66A09AC1EB217160065E286 /* PYOAuthWZTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E66A09B01EB217160065E286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E644C4861BB9B9F2002881AB /* PYOAuthWZ */;
+			targetProxy = E66A09AF1EB217160065E286 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E644C48E1BB9B9F2002881AB /* Debug */ = {
@@ -243,8 +383,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -265,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -285,8 +427,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -301,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -310,9 +454,9 @@
 		};
 		E644C4911BB9B9F2002881AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51F360FCAD72EDFE526AF91F /* Pods-PYOAuthWZ.debug.xcconfig */;
+			baseConfigurationReference = EBD01B4ACCBF69E1A62858AF /* Pods-PYOAuthWZ.debug.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -320,11 +464,45 @@
 		};
 		E644C4921BB9B9F2002881AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96712F8787CE9631DD9B3372 /* Pods-PYOAuthWZ.release.xcconfig */;
+			baseConfigurationReference = E7DA1AAF6540D538E35E81FF /* Pods-PYOAuthWZ.release.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E66A09B21EB217160065E286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FA0E64BFAA6F52CC472712 /* Pods-PYOAuthWZTest.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VT7263HWQT;
+				INFOPLIST_FILE = PYOAuthWZTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushlab.PYOAuthWZTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E66A09B31EB217160065E286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545345F0C8A370F032D54232 /* Pods-PYOAuthWZTest.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VT7263HWQT;
+				INFOPLIST_FILE = PYOAuthWZTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushlab.PYOAuthWZTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -345,6 +523,15 @@
 			buildConfigurations = (
 				E644C4911BB9B9F2002881AB /* Debug */,
 				E644C4921BB9B9F2002881AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E66A09B11EB217160065E286 /* Build configuration list for PBXNativeTarget "PYOAuthWZTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66A09B21EB217160065E286 /* Debug */,
+				E66A09B31EB217160065E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

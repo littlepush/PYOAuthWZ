@@ -40,7 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYDataManager.h"
+#import <PYData/PYData.h>
 
 /*
  We have 4 auth api in this pod.

@@ -40,8 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-//#import <PYNetwork/PYNetwork.h>
-#import "PYNetwork.h"
+#import <PYNetwork/PYNetwork.h>
 
 // The basic auth request, with client_id and secret.
 @interface PYBasicAuthRequest : PYApiRequest

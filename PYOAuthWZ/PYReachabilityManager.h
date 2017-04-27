@@ -40,9 +40,8 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYActionDispatcher.h"
-#import "PYReachability.h"
-#import "PYService.h"
+#import <PYCore/PYCore.h>
+#import <PYNetwork/PYNetwork.h>
 
 #define kPYNetworkUnreachable       0x0001
 #define kPYNetworkOnline            0x0002

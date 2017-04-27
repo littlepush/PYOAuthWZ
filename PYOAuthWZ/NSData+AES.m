@@ -43,7 +43,7 @@
 #import "NSData+AES.h"
 
 #import <CommonCrypto/CommonCryptor.h>
-#import "PYCore.h"
+#import <PYCore/PYCore.h>
 
 NSData *_hexStringToData(NSString *hexString)
 {

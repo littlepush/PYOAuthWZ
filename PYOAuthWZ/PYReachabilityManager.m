@@ -40,6 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
+#import <PYNetwork/PYNetwork.h>
 #import "PYReachabilityManager.h"
 
 static PYReachabilityManager *_gReach = nil;

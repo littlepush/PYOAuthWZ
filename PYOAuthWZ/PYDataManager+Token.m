@@ -41,7 +41,7 @@
  */
 
 #import "PYDataManager+Token.h"
-#import "PYKernel+PYData.h"
+#import <PYData/PYData.h>
 #import <UIKit/UIKit.h>
 
 NSString *const PYOAuthAPIRegisterClient = @"PYOAuthAPIRegisterClient";

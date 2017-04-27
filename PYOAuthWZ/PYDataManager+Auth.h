@@ -40,7 +40,7 @@
  ENJOY YOUR LIFE AND BE FAR AWAY FROM BUGS.
  */
 
-#import "PYDataManager.h"
+#import <PYData/PYData.h>
 
 /*!
  @brief On any action failed, will send this notification
